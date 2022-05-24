@@ -34,6 +34,7 @@ body {
   outline: 1px solid green;
 }
 .button {
+  display: flex;
   background-color: #f5f4fa;
   color: var(--title-text-color);
   font-family: inherit;
@@ -41,9 +42,12 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
@@ -201,8 +205,21 @@ body {
   line-height: 1.19;
   text-align: center;
 }
+.main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .work-title {
   display: none;
+}
+.list-button {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.work-list {
+  display: inline-block;
 }
 .work-name {
   color: var(--title-text-color);
